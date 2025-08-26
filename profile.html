@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ポートフォリオ - プロフィール</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- importmap は残す -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.module.js"
+      }
+    }
+  </script>
+
+  <!-- Three.js 赤球用スクリプト -->
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">トップ</a>
+      <a href="profile.html">プロフィール</a>
+      <a href="works.html">作品紹介</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>プロフィール</h1>
+    <!-- ここに赤い球が描画される -->
+    <canvas id="myCanvas" style="width:200px; height:200px; display:block; margin-bottom:1rem;"></canvas>
+
+    <p>名前: ○○ ○○</p>
+    <p>専門分野: Webデザイン / プログラミング / 3DCG</p>
+    <p>自己紹介: ここに自己紹介文を入れます。</p>
+  </main>
+</body>
+</html>
