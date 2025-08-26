@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>ポートフォリオ - プロフィール</title>
-  <link rel="stylesheet" href="style.css">
 
-  <!-- importmap は残す -->
-  <script type="importmap">
+<head>
+    <meta charset="UTF-8">
+    <title>ポートフォリオ - プロフィール</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- importmap は残す -->
+    <script type="importmap">
     {
       "imports": {
         "three": "https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.module.js"
@@ -14,26 +15,62 @@
     }
   </script>
 
-  <!-- Three.js 赤球用スクリプト -->
-  <script type="module" src="main.js"></script>
+    <!-- Three.js 赤球用スクリプト -->
+    <script type="module" src="main.js"></script>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <a href="index.html">トップ</a>
-      <a href="profile.html">プロフィール</a>
-      <a href="works.html">作品紹介</a>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <a href="index.html">Top</a>
+            <a href="profile.html">About</a>
+            <a href="works.html">Works</a>
+        </nav>
+    </header>
 
-  <main>
-    <h1>プロフィール</h1>
-    <!-- ここに赤い球が描画される -->
-    <canvas id="myCanvas" style="width:200px; height:200px; display:block; margin-bottom:1rem;"></canvas>
+    <main>
+        <h1>Profile</h1>
 
-    <p>名前: ○○ ○○</p>
-    <p>専門分野: Webデザイン / プログラミング / 3DCG</p>
-    <p>自己紹介: ここに自己紹介文を入れます。</p>
-  </main>
+        <!-- 横並びコンテナ -->
+        <div class="profile-container">
+            <!-- 立方体を描画するCanvas -->
+            <canvas id="myCanvas" style="width:200px; height:200px;"></canvas>
+
+            <!-- 名前・自己紹介文 -->
+            <div class="profile-text">
+                <h2>なまえ</h2>
+                <p>こんにちは!</p>
+            </div>
+        </div>
+
+        <!-- 専門分野・経歴 -->
+        <div class="profile-details">
+            <div class="detail-item">
+                <div class="detail-title">Skills & Likes</div>
+                <div class="detail-content">コンピューターグラフィックス</div>
+                <div class="detail-content">Non-photorealistic Rendering (NPR)</div>
+                <div class="detail-content">トゥーンシェーディング（主にアニメ調）</div>
+                <div class="detail-content">プログラミング（C#/C++/HLSL）</div>
+                <div class="detail-content">Unity</div>
+                <div class="detail-content">ゲーム開発</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-title">Accounts</div>
+                <div class="detail-content">X (Twitter)</div>
+                <div class="detail-content">YouTube</div>
+                <div class="detail-content">GitHub</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-title">Affiliation</div>
+                <div class="detail-content">九州大学 芸術工学部 芸術工学科 メディアデザインコース 学士課程 (2020/4-2024/3)</div>
+                <div class="detail-content">九州大学大学院芸術工学府 芸術工学専攻 メディアデザインコース 修士課程 (2024/4- )</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-title">Activities</div>
+                <div class="detail-content">SIGGRAPH Asia 2024 Posters</div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
