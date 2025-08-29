@@ -25,7 +25,7 @@ camera.position.z = 500;
 
 // 立方体にテクスチャを貼り付ける
 const geometry = new THREE.BoxGeometry(150, 150, 150);
-const texture = new THREE.TextureLoader().load('images/Cat_white.png');
+const texture = new THREE.TextureLoader().load('images/mike_alpha_1024.png');
 const material = new THREE.MeshStandardMaterial({ map: texture });
 const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
